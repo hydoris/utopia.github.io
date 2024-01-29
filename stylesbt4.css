@@ -1,0 +1,90 @@
+.content{
+    background-image: url(./img/bt_bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 1440px;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    cursor: url(./img/mouse.png),auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.bt_smallbg{
+    margin-top: 190px;
+    margin-left: 116px;
+    z-index: -1;
+    width: 40%;
+}
+.bt_pd1{
+   position:absolute;
+   bottom: 120px;
+   left: 280px;
+   z-index: 2; 
+   width: 20%;
+   transform: rotate(30deg); 
+   animation: pikopiko 1s steps(2, start) infinite;
+}
+
+@keyframes pikopiko {
+  0% {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
+.bt_smallbg2{
+    position: absolute;
+    top: 60px;
+    left: 744px;
+    width: 36%;
+}
+.text{
+    position: absolute;
+    left: 600px;
+    top: 268px;
+    padding-left: 215px;
+    text-align: center;
+    line-height: 43px;
+}
+h2{
+    font-family: "ab-megadot9", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    border-bottom:solid;
+    border-color:#5d5ffd;
+    border-width:5px;
+    position:absolute;
+    top: 200px;
+    left: 800px;
+}
+h3{
+    font-family: "ab-megadot9", sans-serif;
+    font-weight: 400;
+    font-size: 29px;
+    padding-left: 30px;
+}
+p{font-family: "ab-megadot9", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.TextTyping span {
+	display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+ 	content: "|";
+	animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+	from{opacity:0}
+	to{opacity:1}
+}
